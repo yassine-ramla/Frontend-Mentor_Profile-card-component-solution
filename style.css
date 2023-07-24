@@ -52,7 +52,7 @@ main {
 }
 
 section {
-    max-width: 450px;
+    max-width: 350px;
     min-width: 240px;
     width: 90%;
     background-color: white;
@@ -183,12 +183,12 @@ footer a:hover {
     .bg-top {
         top: 0;
         left: -25vh;
-        transform: translate(0, -50%);
+        transform: translate(0, -50%) scale(1.25);
     }
 
     .bg-bottom {
         top: 0;
         left: calc(100% - 100vh);
-        transform: translate(-75%, 50%);
+        transform: translate(-75%, 50%) scale(1.25);
     }
 }
