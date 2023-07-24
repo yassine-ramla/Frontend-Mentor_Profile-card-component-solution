@@ -19,25 +19,26 @@ html {
 .bg-top,
 .bg-bottom {
     flex-shrink: 0;
-    width: 100%;
     position: relative;
-}
-
-.bg-top img,
-.bg-bottom img {
-    width: 100%;
+    width: 100vw;
+    height: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .bg-top {
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
+    background-image: url("./images/bg-pattern-top.svg");
 }
 
 .bg-bottom {
     top: calc(100% - 100vw);
     left: 50%;
     transform: translate(0, -50%);
+    background-image: url("./images/bg-pattern-bottom.svg");
 }
 
 main {
@@ -169,15 +170,9 @@ footer a:hover {
     .bg-top,
     .bg-bottom {
         flex-shrink: 0;
-        width: unset;
-        height: 100%;
+        width: 100vh;
+        height: 100vh;
         position: relative;
-    }
-
-    .bg-top img,
-    .bg-bottom img {
-        width: unset;
-        height: 100%;
     }
 
     .bg-top {
